@@ -11,20 +11,20 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className=" md:fixed flex flex-row justify-between md:px-32 px-5 p-5 gap-16">
-        <div className=" flex items-center p-2">
+      <div className="md:fixed flex flex-row justify-between md:px-32 px-5 p-5 gap-16">
+        <div className="flex items-center p-2">
           <Link to="/">
-            <h1 className=" font-semibold text-2xl text-brightRed">FitZone</h1>
+            <h1 className="font-semibold text-2xl text-brightRed">BodyByVic</h1>
           </Link>
         </div>
 
-        <nav className=" hidden md:flex items-center p-2 gap-5">
+        <nav className="hidden md:flex items-center p-2 gap-5">
           <Link
             to="home"
             spy={true}
             smooth={true}
             duration={500}
-            className=" hover:text-brightRed transition-all cursor-pointer"
+            className="text-teal-600 hover:text-brightRed transition-all cursor-pointer"
           >
             Home
           </Link>
@@ -33,7 +33,7 @@ const Navbar = () => {
             spy={true}
             smooth={true}
             duration={500}
-            className=" hover:text-brightRed transition-all cursor-pointer"
+            className="text-teal-600 hover:text-brightRed transition-all cursor-pointer"
           >
             Plans
           </Link>
@@ -42,7 +42,7 @@ const Navbar = () => {
             spy={true}
             smooth={true}
             duration={500}
-            className=" hover:text-brightRed transition-all cursor-pointer"
+            className="text-teal-600 hover:text-brightRed transition-all cursor-pointer"
           >
             About Us
           </Link>
@@ -51,7 +51,7 @@ const Navbar = () => {
             spy={true}
             smooth={true}
             duration={500}
-            className=" hover:text-brightRed transition-all cursor-pointer"
+            className="text-teal-600 hover:text-brightRed transition-all cursor-pointer"
           >
             Trainers
           </Link>
@@ -60,7 +60,7 @@ const Navbar = () => {
             spy={true}
             smooth={true}
             duration={500}
-            className=" hover:text-brightRed transition-all cursor-pointer"
+            className="text-teal-600 hover:text-brightRed transition-all cursor-pointer"
           >
             Contact Us
           </Link>
@@ -73,7 +73,7 @@ const Navbar = () => {
 
       <div
         className={`${
-          menu ? " translate-x-0" : "-translate-x-full"
+          menu ? "translate-x-0" : "-translate-x-full"
         } md:hidden flex flex-col absolute bg-white text-black left-0 top-20 font-semibold text-2xl text-center pt-8 pb-4 gap-8 w-full h-fit transition-transform duration-300`}
       >
         <Link
@@ -81,7 +81,7 @@ const Navbar = () => {
           spy={true}
           smooth={true}
           duration={500}
-          className=" hover:text-brightRed transition-all cursor-pointer"
+          className="text-teal-600 hover:text-brightRed transition-all cursor-pointer"
         >
           Home
         </Link>
@@ -90,7 +90,7 @@ const Navbar = () => {
           spy={true}
           smooth={true}
           duration={500}
-          className=" hover:text-brightRed transition-all cursor-pointer"
+          className="text-teal-600 hover:text-brightRed transition-all cursor-pointer"
         >
           Plans
         </Link>
@@ -99,7 +99,7 @@ const Navbar = () => {
           spy={true}
           smooth={true}
           duration={500}
-          className=" hover:text-brightRed transition-all cursor-pointer"
+          className="text-teal-600 hover:text-brightRed transition-all cursor-pointer"
         >
           About Us
         </Link>
@@ -108,7 +108,7 @@ const Navbar = () => {
           spy={true}
           smooth={true}
           duration={500}
-          className=" hover:text-brightRed transition-all cursor-pointer"
+          className="text-teal-600 hover:text-brightRed transition-all cursor-pointer"
         >
           Trainers
         </Link>
@@ -117,7 +117,7 @@ const Navbar = () => {
           spy={true}
           smooth={true}
           duration={500}
-          className=" hover:text-brightRed transition-all cursor-pointer"
+          className="text-teal-600 hover:text-brightRed transition-all cursor-pointer"
         >
           Contact Us
         </Link>

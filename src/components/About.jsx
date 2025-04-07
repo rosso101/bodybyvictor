@@ -123,15 +123,16 @@ const About = () => {
         <Title>About Us</Title>
         <TextContent>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel nisi
-            velit debitis iusto voluptatum consectetur optio minima, ipsum
-            maxime, blanditiis illo corporis quod nam voluptas magnam dolorum
-            amet accusamus error!
+          BodyByVic isn't just a gym - it's a movement. Our Westlands fitness family comes together 
+  to push limits, celebrate victories, and rewrite personal stories. Through tailored programs 
+  and unwavering support, we create spaces where beginners feel welcome and athletes feel 
+  challenged. Your transformation starts the moment you walk through our doors.
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
-            accusamus laboriosam rerum aliquid et odit itaque at, doloremque quo
-            consequuntur?
+          Your body is capable of extraordinary things - we're here to prove it. At BodyByVic, 
+  we don't believe in quick fixes or generic plans. Through intelligent programming and 
+  relentless motivation, we help you build strength that lasts a lifetime. The first rep 
+  is just the beginning.
           </p>
         </TextContent>
       </ContentContainer>

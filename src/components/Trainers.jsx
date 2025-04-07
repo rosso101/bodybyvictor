@@ -85,12 +85,12 @@ const StyledTrainerCard = styled(TrainerCard)`
 const Trainers = () => {
   return (
     <Container>
-      <Title>Our Trainers</Title>
+      <Title>Lead Trainer</Title>
 
       <TrainersGrid>
-        <StyledTrainerCard img={img1} name="Anatoly" />
-        <StyledTrainerCard img={img2} name="Victor" />
-        <StyledTrainerCard img={img3} name="Evgeny" />
+      
+        <StyledTrainerCard img={img2} name="Victor Lenaiyasa" />
+        
       </TrainersGrid>
     </Container>
   );

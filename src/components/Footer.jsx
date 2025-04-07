@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-scroll";
 import { AiTwotonePhone, AiOutlineMail } from "react-icons/ai";
+import logo from "../assets/img/logo.png"; // Make sure this path matches your file structure
 
 // Styled Components
 const FooterContainer = styled.footer`
@@ -127,18 +128,31 @@ const CopyrightSection = styled.div`
   padding-top: 1.5rem;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   color: #a0aec0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
 `;
 
-const CopyrightLink = styled.span`
-  color: #fc8181;
-  font-weight: 600;
+const CompanyLogo = styled.img`
+  height: 36px; /* Increased from 24px to 36px */
+  margin: 0 4px;
+  vertical-align: middle;
   transition: all 0.3s ease;
   cursor: pointer;
+  object-fit: contain;
 
   &:hover {
-    color: #f56565;
-    text-shadow: 0 0 10px rgba(252, 129, 129, 0.3);
+    transform: scale(1.15); /* Slightly increased hover scale */
+    filter: 
+      drop-shadow(0 0 8px rgba(252, 129, 129, 0.4))
+      brightness(1.1); /* Added brightness effect */
   }
+`;
+
+const CopyrightText = styled.span`
+  display: inline-flex;
+  align-items: center;
 `;
 
 const Footer = () => {
@@ -147,23 +161,23 @@ const Footer = () => {
       <FooterContent>
         <BrandSection>
           <BrandLink to="/">
-            <BrandName>FitZone</BrandName>
+            <BrandName>BodyByVic</BrandName>
           </BrandLink>
           <BrandDescription>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Find yourself know yourself, be yourself
           </BrandDescription>
         </BrandSection>
 
         <AddressSection>
           <SectionTitle>Address</SectionTitle>
-          <AddressText>89925 Aubree Square Mumbai 12721</AddressText>
+          <AddressText>00800 Westlands, Nairobi</AddressText>
         </AddressSection>
 
         <ContactSection>
           <SectionTitle>Contact</SectionTitle>
           <ContactItem>
             <AiTwotonePhone size={20} />
-            <span>+91-777-24-12</span>
+            <span>+254 716914336</span>
           </ContactItem>
           <ContactItem>
             <AiOutlineMail size={20} />
@@ -173,8 +187,13 @@ const Footer = () => {
       </FooterContent>
 
       <CopyrightSection>
-        @copyright developed by{" "}
-        <CopyrightLink>champion programmers</CopyrightLink> | All rights reserved
+        <CopyrightText>@copyright developed by</CopyrightText>
+        <CompanyLogo 
+          src={logo} 
+          alt="Champion Programmers Logo" 
+          onClick={() => window.open("https://portfolio-kohl-xi-51.vercel.app/", "_blank")}
+        />
+        <CopyrightText>| All rights reserved</CopyrightText>
       </CopyrightSection>
     </FooterContainer>
   );
