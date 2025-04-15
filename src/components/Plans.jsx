@@ -94,7 +94,7 @@ const StyledPlansCard = styled(PlansCard)`
 
 const Plans = () => {
   return (
-    <Container>
+    <Container id="plans">
       <Title>Gym Membership</Title>
 
       <PlansGrid>
